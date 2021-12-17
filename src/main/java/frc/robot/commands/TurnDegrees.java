@@ -20,7 +20,7 @@ public class TurnDegrees extends CommandBase {
    * @param degrees Degrees to turn. Leverages encoders to compare distance.
    * @param drive The drive subsystem on which this command will run
    */
-  /* [Info 1E] This is drive distance, the parameters are speed, degrees, and drivetrain */
+  /* [Info 2E] This is drive distance, the parameters are speed, degrees, and drivetrain */
   public TurnDegrees(double speed, double degrees, Drivetrain drive) {
     m_degrees = degrees;
     m_speed = speed;

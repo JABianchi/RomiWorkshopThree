@@ -20,7 +20,7 @@ public class DriveTime extends CommandBase {
    * @param time How much time to drive in seconds
    * @param drive The drivetrain subsystem on which this command will run
    */
-  /* [Info 1D] This is drive time, the parameters are speed, time, and drivetrain */
+  /* [Info 2D] This is drive time, the parameters are speed, time, and drivetrain */
   public DriveTime(double speed, double time, Drivetrain drive) {
     m_speed = speed;
     m_duration = time * 1000;

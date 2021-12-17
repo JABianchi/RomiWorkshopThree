@@ -8,7 +8,7 @@ import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.XboxController;
 import frc.robot.commands.ArcadeDrive;
-import frc.robot.commands.Autonomous.AutonomousDistance;
+import frc.robot.commands.AutoDistance;
 import frc.robot.subsystems.Drivetrain;
 import frc.robot.subsystems.OnBoardIO;
 import frc.robot.subsystems.OnBoardIO.ChannelMode;
@@ -69,10 +69,10 @@ public class RobotContainer {
         .whenActive(new PrintCommand("Button A Pressed"))
         .whenInactive(new PrintCommand("Button A Released"));
 
-    /* [TASK 1G] Here we create a list of all the commands to put into a selector menu, based off
+    /* [TASK 2K] Here we create a list of all the commands to put into a selector menu, based off
     the chooser.setDefaultOption("Auto Routine Distance", new AutonomousDistance(drivetrain)); add your
     autonomous square into the selector */
-    m_chooser.setDefaultOption("Auto Routine Distance", new AutonomousDistance(m_drivetrain));
+    m_chooser.setDefaultOption("Auto Routine Distance", new AutoDistance(m_drivetrain));
     SmartDashboard.putData(m_chooser);
   }
 
